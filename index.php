@@ -10,28 +10,40 @@
 </head>
 
 <body>
-    <main class="container">
-        <div class="row">
-            <form action="validar.php" method="post">
-                <div class="col">
-                    <h1>Login</h1>
-                </div>
+
+    <form action="validar.php" method="post">
+<section class="vh-100" style="background-color: #508bfc;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <h3 class="mb-5">Entrar</h3>
+
+            <div class="form-outline mb-4">
+              <input name="usuario" placeholder="Usuário" class="form-control form-control-lg"/>
+              <label class="form-label"></label>
+            </div>
+
+            <div class="form-outline mb-4">
+              <input name="senha" placeholder="Senha" type="password" class="form-control form-control-lg" />
+              <label class="form-label"></label>
+            </div>
+
+            
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Entrar</button>
+
+            <hr class="my-4">
+
+          </div>
         </div>
-        <div class="col-6">
-            <label class="form-label">Usuário:</label>
-            <input name="usuario" class="form-control">
-        </div>
-        <div class="col-6">
-            <label class="form-label">Senha:</label>
-            <input type="password" name="senha" class="form-control">
-        </div>
-        <div class="col-12 mt-3">
-            <button type="submit" class="btn btn-primary">Entrar</button>
-        </div>
-        </form>
-        </div>
-    </main>
+      </div>
+    </div>
+  </div>
+  </form>
+</section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-
 </html>
